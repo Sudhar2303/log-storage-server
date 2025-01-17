@@ -1,8 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-const { getLogData, updateLogData } =require('../controllers/logController')
+const { handleLogReq} =require('../controllers/logController')
 
-router.get('/',updateLogData )
+router.post('/', handleLogReq )
 
 module.exports = router
