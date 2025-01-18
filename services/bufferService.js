@@ -33,7 +33,7 @@ const flushBuffer = async () => {
 
 setInterval(() => {
     flushBuffer().catch((err) => console.error('Error flushing logs:', err));
-}, 2000);
+}, FLUSH_INTERVAL);
 
 module.exports ={
     storeLogAsBuffer
