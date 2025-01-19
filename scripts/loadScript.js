@@ -17,7 +17,7 @@ const options = {
     if (error) {
       console.error('Error occurred: ', error);
     } else {
-      console.log('Test result:', result);
+        console.log(`Request #${result.requestIndex} completed with status code: ${result.statusCode}`);
     }
   },
 };
